@@ -51,7 +51,7 @@ public class IgrolionTalkBot implements LongPollingSingleThreadUpdateConsumer {
                 }
             }
 
-            if (messagesInSession % ignoreMessagesCount == 0) {
+            if (messagesInSession % ignoreMessagesCount == 0 || update.getMessage().getText().equals("/phrase")) {
                 Random rnd = new Random();
                 int limit = rnd.nextInt(3) + 2;
                 try {
