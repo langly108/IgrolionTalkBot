@@ -15,7 +15,7 @@ import java.util.Random;
 public class IgrolionTalkBot implements LongPollingSingleThreadUpdateConsumer {
     private TelegramClient telegramClient = new OkHttpTelegramClient(System.getenv("IGROLION_TALK_BOT_TOKEN"));
 
-    private long ignoreMessagesCount = 10;
+    private long ignoreMessagesCount = 15;
     private long messagesInSession = 0;
 
     private static String composeMessage(List<String> ls) {
