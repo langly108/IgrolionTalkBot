@@ -34,14 +34,14 @@ public class IgrolionTalkBot implements LongPollingSingleThreadUpdateConsumer {
             pos++;
         }
 
-        return result.toString().replaceAll(", $", "");
+        return result.toString().replaceAll(", $", "").replaceAll("@", "");
     }
 
     @Override
     public void consume(Update update) {
         if (update.hasMessage() && update.getMessage().hasText() && update.getMessage().getMessageThreadId() != null && update.getMessage().getMessageThreadId() == 7) {
             messagesInSession++;
-            if (update.getMessage().getText().length() > 4) {
+            if (update.getMessage().getText().length() > 4 && !update.getMessage().getText().equals("/phrase")) {
                 try {
                     PreparedStatement ps = Main.con.prepareStatement("insert into floodchat(msg_text) values (?)");
                     ps.setString(1, update.getMessage().getText());
@@ -81,8 +81,6 @@ public class IgrolionTalkBot implements LongPollingSingleThreadUpdateConsumer {
                 } catch (SQLException e) {
                     throw new RuntimeException(e);
                 }
-                System.out.println(update.getMessage().getText());
-                System.out.println(update.getMessage().getMessageThreadId());
 
             }
 
