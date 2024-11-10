@@ -9,9 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c659a510-5b00-4c57-9587-092ab1cc547d" name="Changes" comment="20-&gt;10">
+    <list default="true" id="c659a510-5b00-4c57-9587-092ab1cc547d" name="Changes" comment="delete mentions">
+      <change afterPath="$PROJECT_DIR$/src/main/java/GameInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/URLTools.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/IgrolionTalkBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IgrolionTalkBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +71,9 @@
   "keyToStringList": {
     "DatabaseDriversLRU": [
       "postgresql"
+    ],
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JAVA"
     ]
   }
 }]]></component>
@@ -74,6 +81,13 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="IgrolionTalkBot" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scratch (1)" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scratch" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_3.java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -88,6 +102,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Java Scratch.Scratch (1)" />
         <item itemvalue="Java Scratch.Scratch" />
       </list>
     </recent_temporary>
@@ -102,7 +117,10 @@
       <updated>1728897397982</updated>
       <workItem from="1728897399427" duration="892000" />
       <workItem from="1728898308355" duration="7063000" />
-      <workItem from="1728907222160" duration="22755000" />
+      <workItem from="1728907222160" duration="25907000" />
+      <workItem from="1729074349398" duration="152000" />
+      <workItem from="1729074581052" duration="15959000" />
+      <workItem from="1730579963606" duration="53759000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1728918873701</created>
@@ -139,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1728994303158</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="delete mentions">
+      <created>1729064556358</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1729064556358</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,7 +184,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial" />
     <MESSAGE value="20-&gt;10" />
-    <option name="LAST_COMMIT_MESSAGE" value="20-&gt;10" />
+    <MESSAGE value="delete mentions" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete mentions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -172,6 +198,11 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/GameInfo.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
